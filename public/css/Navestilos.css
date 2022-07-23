@@ -1,0 +1,70 @@
+
+.navegacion {
+    top: 0;
+    width: 100%;
+    background: #313131;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #F2C94C;
+    transition: all .3s;
+}
+
+.titile-gamequote {
+    color: #F2C94C;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.input-buscar {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(223, 223, 223);
+}
+
+
+/*submenu*/
+
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    display: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    display: block;
+    transition: ease-in-out .8s;
+    z-index: 1;
+}
+

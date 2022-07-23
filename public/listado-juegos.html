@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListJuegos</title>
+    <link rel="stylesheet" href="./css/listado-juegos.css">
+    <link  rel="icon"   href="./svg/Component 1Title.svg "type="image/png" />
+    <script src="./js/Funciones.js" type="module"></script>
+    <script src="./js/listado-juegos.js" type="module"></script>
+    <script src="./js/FuncionesBd.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a id="inic" class="titile-gamequote">GAME QUOTE</a></li>
+                <li><a href="#">Categorías</a>
+                    <ul class="submenu">
+                        <li><a class="categoria" category="Rol">Rol</a></li>
+                        <li><a class="categoria" category="Lucha">Lucha</a></li>
+                        <li><a class="categoria" category="Carreras">Carreras</a></li>
+                        <li><a class="categoria" category="Disparos">Disparos</a></li>
+                        <li><a class="categoria" category="Aventura">Aventura</a></li>
+                        <li><a class="categoria" category="Acción">Acción</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="contacto">Contacto</a>
+                </li>
+                <li>
+                    <a id="foro">Foro</a>
+                </li>
+                <li><a href="#">Aprende Más</a>
+                    <ul class="submenu">
+                        <li><a id="historia" href="#">Historia</a></li>
+                        <li><a id="naves">Tutorial 1</a></li>
+                        <li><a id="tuto2">Tutorial 2</a></li>
+                        <li><a id="pacman">pacman</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="usuario"></a>
+                    <ul id="MenuUsuario" class="submenu">
+                        <li><a id="agregar-juego">Agregar Juego</a></li>
+                        <li><a id="editar-perfil">Editar Perfil</a></li>
+                        <li><a id="cerrar-sesion">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+    </header>
+
+
+    <div id="container-juegos">
+        <!-- <div class="foro-description">
+            <div class="foro-preguntas">
+                <img src="../img/contactanos-user.png" alt="">
+                
+            </div>
+            <div class="foro-preguntas-respuesta">
+                <p class="foro-user"><a href="">God Of War</a></p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At corporis a fugiat tenetur cum, ut obcaecati magni, quibusdam quod autem optio eius vel non. Dolores odio sunt alias magnam neque.</p>
+            </div>
+        </div> - -->
+    </div>
+      <!-- Plugin Sweet alert -->  
+      <script src="./plugins/sweetalert/sweetalert.min.js"></script>  		
+      <script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+      <!-- <link rel="stylesheet" href="../plugins/sweetalert/">   -->
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      
+      <!-- Firebase Scripts -->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+  
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+      <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+              apiKey: "AIzaSyCAv6xTzNE3-mDXKwXVW34o6aZlfpYk3T4",
+              authDomain: "piter-s-guides.firebaseapp.com",
+              projectId: "piter-s-guides",
+              storageBucket: "piter-s-guides.appspot.com",
+              messagingSenderId: "268986497257",
+              appId: "1:268986497257:web:2999fb272496bcfccd5878"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          const auth = firebase.auth();
+          const fs = firebase.firestore();
+      </script>
+</body>
+
+</html>

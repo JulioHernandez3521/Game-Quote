@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/Navestilos.css">
+    <link  rel="icon"   href="./svg/Component 1Title.svg "type="image/png" />
+	<!-- <link rel="stylesheet" href="../css/pagina_inicio_style.css"> -->
+	<title>Invasores</title>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script type="text/javascript" src="./js/FuncoinesJuego/funcionesJuego.js"></script>
+	<script src="./js/Funciones.js" type="module"></script>
+	<script src="./js/FuncionesBd.js" type="module"></script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			width: 100%;
+
+			font-family: 'Roboto Condensed', sans-serif;
+			background: #ad5389;
+			/* fallback for old browsers */
+			background: -webkit-linear-gradient(to top, #3c1053, #ad5389);
+			/* Chrome 10-25, Safari 5.1-6 */
+			background: linear-gradient(to top, #3c1053, #ad5389);
+			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			height: 100vh;
+
+
+			overflow-x: hidden;
+			overflow-y: hidden;
+
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		#miCanvas {
+			position: relative;
+			border-radius: 20px;
+			background: black;
+			box-shadow: 10px 10px 10px black;
+			left: 33%;
+			width: 600px;
+		}
+	</style>
+</head>
+<!--NAVBAR-->
+<header>
+    <nav class="navegacion">
+		<ul class="menu">
+			<li><a id="inic" class="titile-gamequote">GAME QUOTE</a></li>
+			<li><a href="#">Categorías</a>
+				<ul class="submenu">
+					<li><a class="categoria" category="Rol">Rol</a></li>
+					<li><a class="categoria" category="Lucha">Lucha</a></li>
+					<li><a class="categoria" category="Carreras">Carreras</a></li>
+					<li><a class="categoria" category="Disparos">Disparos</a></li>
+					<li><a class="categoria" category="Aventura">Aventura</a></li>
+					<li><a class="categoria" category="Acción">Acción</a></li>
+				</ul>
+			</li>
+			<li>
+				<a id="contacto">Contacto</a>
+			</li>
+			<li>
+				<a id="foro">Foro</a>
+			</li>
+			<li><a href="#">Aprende Más</a>
+				<ul class="submenu">
+					<li><a id="historia" href="#">Historia</a></li>
+					<li><a id="naves">Tutorial 1</a></li>
+					<li><a id="tuto2">Tutorial 2</a></li>
+					<li><a id="pacman">pacman</a></li>
+				</ul>
+			</li>
+			<li>
+				<a id="usuario"></a>
+				<ul id="MenuUsuario" class="submenu">
+					<li><a id="agregar-juego">Agregar Juego</a></li>
+					<li><a id="editar-perfil">Editar Perfil</a></li>
+					<li><a id="cerrar-sesion">Cerrar Sesión</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<h1>INVASORES</h1>
+	<canvas id="miCanvas" width="600px" height="500px">
+		Tu navegador no soporta CANVAS
+	</canvas>
+
+	<!-- Plugin Sweet alert -->
+	<script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+	<script src="./plugins/sweetalert/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="./plugins/sweetalert/">
+	<!-- Include the Dark theme
+	<link rel="stylesheet" href="@sweetalert2/theme-dark/dark.css">
+	<script src="sweetalert2/dist/sweetalert2.min.js"></script> -->
+
+	<!-- Firebase Scripts -->
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyCAv6xTzNE3-mDXKwXVW34o6aZlfpYk3T4",
+			authDomain: "piter-s-guides.firebaseapp.com",
+			projectId: "piter-s-guides",
+			storageBucket: "piter-s-guides.appspot.com",
+			messagingSenderId: "268986497257",
+			appId: "1:268986497257:web:2999fb272496bcfccd5878"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		const auth = firebase.auth();
+		const fs = firebase.firestore();
+	</script>
+</body>
+
+</html>

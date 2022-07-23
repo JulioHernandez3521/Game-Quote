@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #ad5389;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3c1053, #ad5389);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3c1053, #ad5389);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+  }
+
+  @font-face {
+    font-family: 'BDCartoonShoutRegular';
+    src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  #pacman {
+    position: absolute;
+    float: left;
+    left: 40%;
+    top: 15%;
+    height: 450px;
+    width: 342px;
+    margin: 20px auto;
+    z-index: 1;
+  }
+
+  #shim {
+    font-family: BDCartoonShoutRegular;
+    position: absolute;
+    visibility: hidden
+  }
+
+  h1 {
+    position: absolute;
+    float: left;
+    top: 10%;
+    left: 45%;
+    font-family: BDCartoonShoutRegular;
+    text-align: center;
+  }
+
+  /* body { width:342px; margin:0px auto; font-family:sans-serif; } */
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    position: relative;
+    float: left;
+    width: 10%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    left: 50px;
+    background-color: rgb(211, 165, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+  }
+
+  button:hover {
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 15px;
+  }
