@@ -1,6 +1,6 @@
 import { validaCorreYContra } from './Funciones.js';
 import {  Google, InicioCorreo, resetPass } from './FuncionesBd.js';
-// const url =  `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCAv6xTzNE3-mDXKwXVW34o6aZlfpYk3T4`;
+// const url =  `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=`;
 
 window.onload = init;
 
